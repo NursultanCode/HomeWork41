@@ -69,6 +69,7 @@ public class BonusServer {
     }
 
     private String check(String message2) {
+        message2 = message2.toLowerCase();
         if (message2.startsWith("date")) return "date";
         else if (message2.startsWith("time")) return "time";
         else if (message2.startsWith("reverse")) return "reverse";
